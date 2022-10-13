@@ -43,7 +43,11 @@ body{
   
 }
 img#mirufi{
-    width: 800px;
+    display: block;
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    
 
 }
 header a.externo::after, main a.externo::after {
