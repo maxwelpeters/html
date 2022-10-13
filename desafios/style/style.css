@@ -36,13 +36,7 @@ Cores
     padding: 0px;
     font-weight: normal
 }
-blockquote.twitter-tweet{
-    margin: auto;
-    top: 100%;
-    left: 500px;
 
-
-}
 body{
     background-color: var(--cor0);
     font-family: var(--fontePadrao);
