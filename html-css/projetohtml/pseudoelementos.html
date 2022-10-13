@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelement</title>
+    <style>
+        h1{
+            
+           
+            background-color: lightgray;
+
+            height: 300px ;
+            width:300px ;
+            
+            margin: 10px auto 10px auto;
+
+            border: 10px solid darkslategray;
+        
+            padding: 10px;
+
+            outline: 5px dashed salmon;
+           
+            
+        }
+        html{
+            background-attachment: fixed;
+            background-color: aliceblue;
+            background-image: linear-gradient(180deg,#ababab, #ffffff);
+        }
+        body{
+            height:500px;
+            width: 800px;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            
+            margin: auto;
+            
+        }
+        a{
+            padding: 5px;
+            border-radius: 10px;
+            
+        }
+        p{
+            text-align: justify;
+            width: 600px;
+            margin: auto;
+            
+        }
+        p::selection, a::selection, h1::selection{
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>main</h1>
+    <p>Lorem <a href="#">bilada</a> ipsum dolor, sit amet consectetur adipisicing elit. Magnam nemo voluptatem qui distinctio, sapiente quis similique asperiores neque omnis pariatur libero ipsum labore cumque delectus odit optio dicta consequatur debitis.</p>
+</body>
+</html>

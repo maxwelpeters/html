@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: rgb(78, 129, 226);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens Dinamicas são deveras muito top</h1>
+    <a href="../../projetohtml/index.html">
+        <picture>
+            <!--max- ele vai pegar a imagem até o valor
+            min- ele vai pegar a imagem a partir daquele valor-->
+            <source media="(max-width: 730px )" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1030px )" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="">
+        </picture>
+    </a>
+    <h1>Reproduzindo Áudios</h1>
+    <audio preload="metadata" src="midia/put.mp3" autoplay controls></audio>
+    <!--MP3 - WAV - DOG-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/put.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <h1>Vídeos hospedados localmente</h1>
+    <video preload="metadata" width="480" height="270" poster="midia/img/cat.png" controls>
+        <source src="midia/furry.m4v" type="video/mp4">
+        <source src="midia/furry.mp4" type="video/mp4">
+        <source src="midia/furry.webm" type="video/webm">
+        <source src="midia/furry.ogv" type="video/ogg">
+        <p>seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+    
+    <h1>Vídeo hospedados externamente</h1>
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/PvNwPuQybVQ?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!--
+    <video width="560" height="315" src="midia/furrymp4.mp4" preload="metadata" autoplay controls></video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N7VbEV27Nag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    -->
+</body>
+</html>
